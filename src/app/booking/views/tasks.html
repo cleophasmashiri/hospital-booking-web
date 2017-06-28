@@ -1,0 +1,35 @@
+<div class="row">
+  <form action="" method="post" role="form">
+    <legend>Tasks
+    </legend>
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>Status</th>
+        <th>Name</th>
+        <th>Comments</th>
+        <th>Date and time</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="task in vm.tasks">
+        <td>{{task.status}}</td>
+        <td>{{task.name}}</td>
+        <td>{{task.comments}}</td>
+        <td>{{task.date | date:"MMM d, y h:mm:ss a"}}</td>
+        <td>
+          <button ui-sref="booking.consultProcess({bookingId:booking.id})" class="btn-lg btn btn-primary btn-block"><span
+            class="glyphicon glyphicon-user"></span> Claim
+          </button>
+        </td>
+        <td>
+          <button ui-sref="booking.consultProcess({bookingId:booking.id})" class="btn-lg btn btn-primary btn-block"><span
+            class="glyphicon glyphicon-ok"></span> Complete
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>

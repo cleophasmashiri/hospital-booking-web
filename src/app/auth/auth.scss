@@ -1,0 +1,54 @@
+.container-fluid {
+  padding-left: 8px;
+  padding-right: 3px;
+}
+.main {
+  .btn-primary {
+    color: #fff;
+    background-color: #4cae4c;
+    border-color: #0ffc5d;
+  }
+  .btn-danger {
+    color: #fff;
+    border-color: #0ffc5d;
+  }
+  form {
+    margin-bottom: 40px;
+    padding: 0 40px 0 40px;
+  }
+  .panel-default {
+      padding-left: 0px;
+      padding-top: 0px;
+  }
+  .navbar-inverse {
+    background-color: #4cae4c;
+    border-color: #4cae4c;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    color: #fff;
+    background-color: #4cae4c;
+    border-color: #4cae4c;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+  }
+  .navbar-inverse .navbar-brand {
+    color: #fff;
+    background-color: #4cae4c;
+  }
+  .alert-info {
+    background-color: rgb(250, 255, 189);
+    border-color: rgb(250, 255, 189);
+    color: #230808;
+  }
+  .login-panel {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #dff0d8;
+  }
+  a:hover, a:focus {
+    color: #4cae4c;
+  }
+}

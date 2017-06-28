@@ -1,0 +1,30 @@
+<div class="row">
+  <form action="" method="post" role="form">
+    <legend>Booking Processing
+      <small>[For Staff Only]</small>
+    </legend>
+    <uib-accordion close-others="true">
+      <div is-open="true" uib-accordion-group class="panel-default" heading="Patient Details">
+        <div class="row">
+          <div class="col-md-offset-1 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div user="vm.userDetails" ng-include="'app/booking/views/userDetails.html'"></div>
+          </div>
+        </div>
+      </div>
+      <div uib-accordion-group class="panel-default" heading="Tasks">
+        <div class="row">
+          <div class="col-md-offset-1 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div tasks="vm.tasks" ng-include="'app/booking/views/tasks.html'"></div>
+          </div>
+        </div>
+      </div>
+      <div uib-accordion-group class="panel-default" heading="Patient History">
+        <div class="row">
+          <div class="col-md-offset-1 col-xs-10 col-sm-10 col-md-10 col-lg-10">
+            <div history="vm.history" ng-include="'app/booking/views/patientHistory.html'"></div>
+          </div>
+        </div>
+      </div>
+    </uib-accordion>
+  </form>
+</div>

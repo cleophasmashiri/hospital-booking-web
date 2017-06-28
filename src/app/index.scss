@@ -1,0 +1,121 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #fff;
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.home-main {
+  background: rgba(76, 174, 76, 1);
+  background: -moz-linear-gradient(top, rgba(76, 174, 76, 1) 0%, rgba(145, 232, 66, 0.32) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(76, 174, 76, 1)), color-stop(100%, rgba(145, 232, 66, 0.32)));
+  background: -webkit-linear-gradient(top, rgba(76, 174, 76, 1) 0%, rgba(145, 232, 66, 0.32) 100%);
+  background: -o-linear-gradient(top, rgba(76, 174, 76, 1) 0%, rgba(145, 232, 66, 0.32) 100%);
+  background: -ms-linear-gradient(top, rgba(76, 174, 76, 1) 0%, rgba(145, 232, 66, 0.32) 100%);
+  background: linear-gradient(to bottom, rgba(76, 174, 76, 1) 0%, rgba(145, 232, 66, 0.32) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4cae4c', endColorstr='#91e842', GradientType=0 );
+  padding-bottom: 30%;
+
+  .navbar-inverse {
+    background-color: transparent;
+    border-color: #4cae4c;
+  }
+  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    color: #fff;
+    background-color: transparent;
+    border-color: #4cae4c;
+  }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #zzc;
+  }
+  .navbar-inverse .navbar-brand {
+    color: #fff;
+    background-color: transparent;
+  }
+  .alert-info {
+    background-color: transparent;
+    border-color: #4cae4c;
+    color: #fff;
+  }
+  .jumbotron {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: inherit;
+    background-color: #dff0d8;
+  }
+}
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+.gi-2x {
+  font-size: 2em;
+}
+
+.gi-3x {
+  font-size: 3em;
+}
+
+.gi-4x {
+  font-size: 4em;
+}
+
+.gi-5x {
+  font-size: 5em;
+}
+#custom-search-input{
+  padding: 3px;
+  border: solid 1px #E4E4E4;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+#custom-search-input input{
+  border: 0;
+  box-shadow: none;
+}
+
+#custom-search-input button{
+  margin: 2px 0 0 0;
+  background: none;
+  box-shadow: none;
+  border: 0;
+  color: #666666;
+  padding: 0 8px 0 10px;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+  border: 0;
+  box-shadow: none;
+  border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+  font-size: 23px;
+}
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

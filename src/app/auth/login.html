@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-md-offset-3 col-lg-offset-3 col-md-offset-3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="panel panel-default">
+      <div class="page-header">
+        <h2>Login <small>Use email and password to login.</small></h2>
+      </div>
+    	<div class="panel-body" >
+        <form autocomplete="off" method="post" name="dataForm"  role="form" ng-submit="vm.login()">
+          <div class="form-group">
+            <label for="userName"></label>
+            <i class="fa fa-key"></i>
+            <input type="text" class="form-control" name="" id="userName" placeholder="Enter your user name" ng-model="vm.credentials.userName" required>
+            <span class="help-block" ng-show="dataForm.userName.$dirty && dataForm.userName.$error.required" >User Name is required</span>
+          </div>
+          <div class="form-group">
+            <label for="password"></label>
+            <i class="fa fa-lock"></i>
+            <input ng-model="vm.credentials.password" type="password" class="form-control" name="password" id="password" placeholder="Enter your password">
+            <span ng-show="dataForm.password.$dirty && dataForm.password.$error.required" class="help-block">Password is required</span>
+          </div>
+          <div class="form-actions">
+            <button ng-disabled="dataForm.$isvalid || dataLoading" type="submit" class="btn-block btn btn-success btn-lg">Login - <small>click here to login</small></button>
+            <img ng-if="dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
+          </div>
+        </form>
+    	</div>
+    </div>
+
+  </div>
+</div>
+<br><br>
+<div class="row small">
+  <div class="col-md-offset-3 col-lg-offset-3 col-md-offset-3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <table width="40%" class="alert-info table table-striped table-hover">
+      <thead>
+      <tr>
+        <th colspan="2">Demo Login Accounts <a ng-click="vm.toggle()" class="pull-right"><span ng-class="vm.hideLogins?'glyphicon-plus-sign':'glyphicon-minus-sign'" class="gi-3x glyphicon"></span></a></th>
+      </tr>
+      <tr ng-show="!vm.hideLogins">
+        <th>User name</th>
+        <th>Password</th>
+      </tr>
+      </thead>
+      <tbody ng-show="!vm.hideLogins">
+      <tr ng-repeat="login in vm.logins">
+        <td>{{login.user}}</td>
+        <td>{{login.password}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

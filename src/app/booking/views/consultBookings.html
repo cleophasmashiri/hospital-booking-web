@@ -1,0 +1,50 @@
+<div class="row">
+  <form action="" method="post" role="form">
+    <legend>Bookings
+      <small>[For Staff Only]</small>
+    </legend>
+    <div class="row" style="margin-top: 25px; margin-bottom: 15px">
+      <div class="col-md-6">
+        <div id="custom-search-input">
+          <div class="input-group col-md-12">
+            <input type="text" class="form-control input-lg" placeholder="Enter Patient Name"/>
+                    <span class="input-group-btn">
+                        <button class="btn btn-info btn-lg" type="button">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>Status</th>
+        <th>Patient Name</th>
+        <th>Cell</th>
+        <th>Email</th>
+        <th>Date and time</th>
+        <th>Reason</th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="booking in vm.bookings">
+        <td>{{booking.status}}</td>
+        <td>{{booking.name}}</td>
+        <td>{{booking.cell}}</td>
+        <td>{{booking.email}}</td>
+        <td>{{booking.date | date:"MMM d, y h:mm:ss a"}}</td>
+        <td>{{booking.reason}}</td>
+        <td>
+          <button ui-sref="booking.consultProcess({bookingId:booking.id})" class="btn-lg btn btn-primary btn-block"><span
+            class="glyphicon glyphicon-user"></span> View
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </form>
+</div>
