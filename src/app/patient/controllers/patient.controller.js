@@ -1,10 +1,10 @@
 (function() {
   'use strict';
   angular
-    .module('hospitalUi.booking')
-    .controller('BookingController', BookingController);
+    .module('hospitalUi.patient')
+    .controller('PatientController', PatientController);
   /** @ngInject */
-  function BookingController($state, AuthService, toastr) {
+  function PatientController($state, AuthService, toastr) {
     var vm = this;
     vm.currentUser = AuthService.getCurrentUser();
     function initialise() {

@@ -113,6 +113,16 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 #custom-search-input .glyphicon-search{
   font-size: 23px;
 }
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+.help-block, .error {
+  display: block;
+  margin-top: 3px;
+  margin-bottom: 1px;
+  color: #DE1515;
+}
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

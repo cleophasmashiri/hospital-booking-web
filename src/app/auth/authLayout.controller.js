@@ -6,6 +6,11 @@
     .controller('AuthLayoutController', AuthLayoutController);
 
   /** @ngInject */
-  function AuthLayoutController() {
+  function AuthLayoutController(AuthService, $state) {
+    var vm = this;
+    vm.logout = function () {
+      AuthService.logOut();
+      $state.go('auth.login');
+    };
   }
 })();

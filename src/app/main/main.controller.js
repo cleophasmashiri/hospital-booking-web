@@ -4,6 +4,11 @@
     .module('hospitalUi')
     .controller('MainController', MainController);
   /** @ngInject */
-  function MainController() {
+  function MainController(AuthService) {
+    var vm = this;
+    function initialise() {
+      vm.currentUser = AuthService.getCurrentUser();
+    }
+    initialise();
   }
 })();

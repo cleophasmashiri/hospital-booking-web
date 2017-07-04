@@ -4,5 +4,5 @@
 
   angular
     .module('hospitalUi.booking')
-    .constant('bookingConfig', {baseUrl:'http://localhost:8080/api/bookings/'});
+    .constant('bookingConfig', {baseUrl:'http://localhost:8083/api/booking/'});
 })();

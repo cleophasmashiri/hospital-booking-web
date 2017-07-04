@@ -8,8 +8,9 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
       <ul class="nav navbar-nav navbar-right acme-navbar-text">
-        <li><a ng-href="#">My Bookings</a></li>
-        <li><a ng-href="#">Login</a></li>
+        <li ng-if="vm.currentUser"><a ng-href="#">My Bookings</a></li>
+        <li ng-if="!vm.currentUser"><a ui-sref="auth.login">Login</a></li>
+        <li ng-if="vm.currentUser" ng-click="vm.logout()" ><a>Logout</a></li>
       </ul>
     </div>
   </div>

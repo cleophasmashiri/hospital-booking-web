@@ -8,19 +8,28 @@
   /** @ngInject */
   function routerConfig($stateProvider) {
     $stateProvider
-      .state('layout', {
+      .state('auth', {
         url: '/',
         templateUrl: 'app/auth/layout.html',
         controller: 'AuthLayoutController',
         controllerAs: 'vm',
         abstract: true
       })
-      .state('layout.login', {
+      .state('auth.login', {
       url: 'login',
       views: {
         'mainView': {
           templateUrl: 'app/auth/login.html',
           controller: 'LoginController',
+          controllerAs: 'vm'
+        }
+      }
+    }).state('auth.register', {
+      url: 'register/:roleId',
+      views: {
+        'mainView': {
+          templateUrl: 'app/auth/register.html',
+          controller: 'RegisterController',
           controllerAs: 'vm'
         }
       }

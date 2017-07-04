@@ -2,15 +2,14 @@
  * Created by cleophas on 2017/06/21.
  */
 (function () {
-  angular.module('hospitalUi.booking').factory('BookingService', BookingService);
+  angular.module('hospitalUi.patient').factory('PatientService', PatientService);
 
-  function BookingService($http, $q, bookingConfig) {
-    return {listByUserId: listByUserId, listAll: listAll};
-
-    function listAll() {
-      return $http.get(bookingConfig.baseUrl + 'list')
-        .then(function (bookingsResponse) {
-          return $q.resolve(bookingsResponse.data);
+  function PatientService($http, $q, patientConfig) {
+    return {listByUserId: listByUserId, makeBooking: makeBooking};
+    function makeBooking(booking) {
+      return $http.post(patientConfig.baseUrl + 'new', booking)
+        .then(function (res) {
+          return $q.resolve(res.data);
         })
         .catch(function (err) {
           return $q.reject(err);

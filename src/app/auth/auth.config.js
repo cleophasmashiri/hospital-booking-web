@@ -5,22 +5,21 @@
   angular.module('hospitalUi.auth').config(authHtpConfig);
   function authHtpConfig($httpProvider) {
     $httpProvider.interceptors.push(authConfig);
-    function authConfig($q, $cookies, $injector) {
+    function authConfig($q, $cookieStore, $injector, $location) {
       return {
         request: function (config) {
           config.headers = config.headers || {};
-          var authData = $cookies.get('authData');
+          var authData = $cookieStore.get('authData');
           if (authData) {
             config.headers.user = config.headers.user || authData;
-            $cookies.set('authData', authData);
+            //$cookieStore.set('authData', authData);
           }
           return config;
         },
         responseError: function (err) {
           if (err.status === 401) {
+            $injector.get('AuthService').logOut();
             $location.path('/login');
-            var authService = $injector.get('Authentication');
-            authService.logOut();
           }
           return $q.reject(err);
         }

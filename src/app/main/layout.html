@@ -1,7 +1,23 @@
 <div class="container-fluid home-main">
 
   <div>
-    <acme-navbar creation-date="main.creationDate"></acme-navbar>
+    <nav class="navbar navbar-static-top navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">
+          <span class="glyphicon glyphicon-home"></span> Hospital Booking
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+        <ul class="nav navbar-nav navbar-right acme-navbar-text">
+          <li ng-if="vm.currentUser"><a ui-sref="booking.patients">My Bookings</a></li>
+          <li ng-if="!vm.currentUser"><a ui-sref="auth.login">Login</a></li>
+          <li ng-if="vm.currentUser" ng-click="vm.logout()" ><a>Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
   </div>
 
   <div id="mainView" ui-view="mainView"></div>

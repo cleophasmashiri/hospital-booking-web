@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-offset-3 col-lg-offset-3 col-md-offset-3 col-xs-12 col-sm-12 col-md-6 col-lg-6">
+    <div class="panel panel-default">
+      <div class="page-header text-center">
+        <h2>Register <small>Enter your details to register below.</small></h2>
+      </div>
+    	<div class="panel-body" >
+        <form autocomplete="off" method="post" name="dataForm"  role="form" ng-submit="vm.register()">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <i class="fa fa-key"></i>
+            <input type="email" class="form-control" name="" id="email" placeholder="Enter your email" ng-model="vm.credentials.email" required>
+            <span class="help-block" ng-show="dataForm.email.$dirty && dataForm.email.$error.required" >Email is required</span>
+          </div>
+          <div class="form-group">
+            <label for="firstName">First name</label>
+            <i class="fa fa-key"></i>
+            <input type="text" class="form-control" name="firstName" id="firstName" placeholder="Enter your First Name" ng-model="vm.credentials.firstName" required>
+            <span class="help-block" ng-show="dataForm.firstName.$dirty && dataForm.firstName.$error.required" >First Name is required</span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last name</label>
+            <i class="fa fa-key"></i>
+            <input type="text" class="form-control" name="lastName" id="lastName" placeholder="Enter your Last Name" ng-model="vm.credentials.lastName" required>
+            <span class="help-block" ng-show="dataForm.lastName.$dirty && dataForm.lastName.$error.required" >First Name is required</span>
+          </div>
+          <div class="form-group required">
+            <label for="password">Password</label>
+            <i class="fa fa-lock"></i>
+            <input required ng-model="vm.credentials.password" type="password" class="form-control" name="password" id="password" placeholder="Enter your password">
+            <span ng-show="dataForm.password.$dirty && dataForm.password.$error.required" class="help-block">Password is required</span>
+          </div>
+          <div class="form-group required">
+            <label for="password">Confirmation Password</label>
+            <i class="fa fa-lock"></i>
+            <input type="password" required ng-model="vm.credentials.confirmPassword" type="confirmPassword" class="form-control" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password">
+            <span ng-show="dataForm.confirmPassword.$dirty && dataForm.confirmPassword.$error.required" class="help-block">Confirmation Password is required</span>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Role</label>
+            <i class="fa fa-key"></i>
+            <ul class="list-group list-unstyled">
+              <li><input ng-model="vm.roleId" type="radio" name="role" value="patients"> Patient</li>
+              <li><input ng-model="vm.roleId" type="radio" name="role" value="nurses"> Nurse</li>
+              <li><input ng-model="vm.roleId" type="radio" name="role" value="doctors"> Doctor</li>
+              <li><input ng-model="vm.roleId" type="radio" name="role" value="pharmacists"> Pharmacy</li>
+            </ul>
+            <span class="help-block" ng-show="dataForm.lastName.$dirty && dataForm.lastName.$error.required" >First Name is required</span>
+          </div>
+          <div class="form-actions">
+            <button ng-disabled="dataForm.$isvalid || dataLoading" type="submit" class="btn btn-success btn-lg">
+              <span class="glyphicon glyphicon-user" ></span> Register - <small>click here to register</small></button>
+            <button ng-disabled="dataForm.$isvalid || dataLoading" ui-sref="auth.login" class="btn btn-default btn-lg">
+              <span class="glyphicon glyphicon-log-in" ></span> Login - <small>click here to go to login</small></button>
+          </div>
+        </form>
+    	</div>
+    </div>
+  </div>
+</div>

@@ -1,10 +1,8 @@
 (function() {
   'use strict';
-
   angular
     .module('hospitalUi.booking')
     .config(routerConfig);
-
   /** @ngInject */
   function routerConfig($stateProvider) {
     $stateProvider
@@ -15,16 +13,7 @@
         controllerAs: 'vm',
         abstract: true
       })
-      .state('booking.patients', {
-        url: 'patient',
-        views: {
-          'mainView': {
-            templateUrl: 'app/booking/views/bookings.html',
-            controller: 'BookingController',
-            controllerAs: 'vm'
-          }
-        }
-      }).state('booking.consult', {
+      .state('booking.consult', {
       url: 'consult',
       views: {
         'mainView': {
@@ -44,5 +33,4 @@
       }
     });
   }
-
 })();

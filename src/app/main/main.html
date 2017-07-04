@@ -4,7 +4,7 @@
     Book your next hospital in advance and avoid standing in a queue.
   </p>
   <p class="animated infinite" ng-class="main.classAnimation">
-    <a class="btn btn-lg btn-success" ui-sref="layout.booking">Make a booking</a>
-    <a class="btn btn-lg btn-default" ui-sref="layout.login">Login</a>
+    <a class="btn btn-lg btn-success" ui-sref="patient.newBooking">Make a booking</a>
+    <a ng-if="!vm.currentUser" class="btn btn-lg btn-default" ui-sref="auth.login">Login</a>
   </p>
 </div>
