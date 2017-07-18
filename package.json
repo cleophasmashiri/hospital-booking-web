@@ -4,7 +4,7 @@
   "dependencies": {},
   "scripts": {
     "test": "gulp test",
-    "postinstall": "bower install"
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
@@ -49,7 +49,7 @@
     "http-proxy-middleware": "~0.9.0",
     "chalk": "~1.1.1",
     "uglify-save-license": "~0.4.1",
-    "bower": "1.6.5"
+    "bower": "~1.6.0"
   },
   "engines": {
     "node": ">=0.10.0"
