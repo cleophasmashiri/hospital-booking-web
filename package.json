@@ -1,7 +1,6 @@
 {
   "name": "hospitalUi",
   "version": "0.0.0",
-  "dependencies": {},
   "scripts": {
     "test": "gulp test",
     "postinstall": "./node_modules/bower/bin/bower install"
@@ -51,7 +50,7 @@
     "uglify-save-license": "~0.4.1"
   },
   "dependencies": {
-    "bower": "1.6.x"
+    "bower": "1.8.0"
   },
   "engines": {
     "node": ">=0.10.0"
