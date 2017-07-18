@@ -1,0 +1,33 @@
+<div class="panel panel-default" style="padding: 10px">
+  <div class="page-header">
+    <h2>Complete Task<small>Enter task details below.</small></h2>
+    <a style="margin-top: -34px" class="pull-right" ng-click="vm.cancel()"><span class="glyphicon glyphicon-remove gi-2x" ></span></a>
+  </div>
+  <div class="panel-body">
+    <form autocomplete="off" method="post" name="dataForm"  role="form" ng-submit="vm.completeTask()">
+      <div class="form-group">
+        <label for="decision">Decision</label>
+        <i class="fa fa-key"></i>
+        <ul class="list-group list-unstyled">
+          <li ng-repeat="decision in vm.decisions">
+            <input id="decision" name="decision" type="radio" ng-model="vm.decision" value="{{decision.id}}">
+            <span>{{decision.name}}</span>
+          </li>
+        </ul>
+        <span class="help-block" ng-show="dataForm.firstName.$dirty && dataForm.firstName.$error.required" >First Name is required</span>
+      </div>
+      <div class="form-group">
+        <label for="comments">Comments</label>
+        <i class="fa fa-key"></i>
+        <textarea id="comments" name="comments" ng-model="vm.comments" class="form-control" required></textarea>
+        <span class="help-block" ng-show="dataForm.comments.$dirty && dataForm.comments.$error.required" >Cooments are required</span>
+      </div>
+      <div class="form-actions">
+        <button ng-disabled="dataForm.$isvalid || dataLoading" type="submit" class="btn btn-success btn-lg">
+          <span class="glyphicon glyphicon-ok" ></span> Complete - <small>click here to go to complete task</small></button>
+        <button ng-click="vm.cancel()" ng-disabled="dataForm.$isvalid || dataLoading" ui-sref="auth.login" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-remove" ></span> Cancel - <small>click here to complete task</small></button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -4,10 +4,10 @@
 (function () {
   angular.module('hospitalUi.patient').factory('PatientService', PatientService);
 
-  function PatientService($http, $q, patientConfig) {
+  function PatientService($http, $q, mainConfig) {
     return {listByUserId: listByUserId, makeBooking: makeBooking};
     function makeBooking(booking) {
-      return $http.post(patientConfig.baseUrl + 'new', booking)
+      return $http.post(mainConfig.baseUrl + 'new', booking)
         .then(function (res) {
           return $q.resolve(res.data);
         })
@@ -19,7 +19,7 @@
       if (!userId) {
         return $q.reject('User Id must be provided');
       }
-      return $http.get(bookingConfig.baseUrl + 'bookings/' + userId)
+      return $http.get(mainConfig.baseUrl + 'mybookings/' + userId)
         .then(function (bookingsResponse) {
           return $q.resolve(bookingsResponse.data);
         })

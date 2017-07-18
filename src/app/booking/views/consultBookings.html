@@ -1,15 +1,15 @@
 <div class="row">
-  <form action="" method="post" role="form">
-    <legend>Bookings
-      <small>[For Staff Only]</small>
+  <!--<form action="" method="post" role="form">-->
+    <legend>Search Patient Bookings
+      <small>Filter by patient name</small>
     </legend>
     <div class="row" style="margin-top: 25px; margin-bottom: 15px">
       <div class="col-md-6">
         <div id="custom-search-input">
           <div class="input-group col-md-12">
-            <input type="text" class="form-control input-lg" placeholder="Enter Patient Name"/>
+            <input ng-model="vm.searchText" type="text" class="form-control input-lg" placeholder="Enter Patient Name"/>
                     <span class="input-group-btn">
-                        <button class="btn btn-info btn-lg" type="button">
+                        <button ng-click="vm.searchBookings()" class="btn btn-info btn-lg" type="button">
                             <i class="glyphicon glyphicon-search"></i>
                         </button>
                     </span>
@@ -17,34 +17,23 @@
         </div>
       </div>
     </div>
-
     <table class="table table-hover">
       <thead>
       <tr>
-        <th>Status</th>
-        <th>Patient Name</th>
-        <th>Cell</th>
-        <th>Email</th>
-        <th>Date and time</th>
+        <th>Patient Email</th>
+        <th>Booking Date</th>
         <th>Reason</th>
         <th></th>
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="booking in vm.bookings">
-        <td>{{booking.status}}</td>
-        <td>{{booking.name}}</td>
-        <td>{{booking.cell}}</td>
-        <td>{{booking.email}}</td>
-        <td>{{booking.date | date:"MMM d, y h:mm:ss a"}}</td>
+      <tr ng-repeat="booking in vm.bookings | filter:vm.searchText">
+        <td>{{booking.patientUserId}}</td>
+        <td>{{booking.requiredDate | date:'medium'}}</td>
         <td>{{booking.reason}}</td>
-        <td>
-          <button ui-sref="booking.consultProcess({bookingId:booking.id})" class="btn-lg btn btn-primary btn-block"><span
-            class="glyphicon glyphicon-user"></span> View
-          </button>
-        </td>
+        <td><a class="btn-lg btn btn-primary" ui-sref="booking.consultProcess({bookingId: booking.processInstanceId})"> <span class="glyphicon glyphicon-list"></span> View Details ..</a></td>
       </tr>
       </tbody>
     </table>
-  </form>
+  <!--</form>-->
 </div>

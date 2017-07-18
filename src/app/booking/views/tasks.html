@@ -1,35 +1,37 @@
 <div class="row">
-  <form action="" method="post" role="form">
     <legend>Tasks
     </legend>
     <table class="table table-hover">
       <thead>
       <tr>
-        <th>Status</th>
+        <th>Completed</th>
         <th>Name</th>
-        <th>Comments</th>
-        <th>Date and time</th>
+        <th>Assigned to</th>
+        <th>Started</th>
+        <th>Ended</th>
+        <th>Duration</th>
         <th></th>
       </tr>
       </thead>
       <tbody>
-      <tr ng-repeat="task in vm.tasks">
-        <td>{{task.status}}</td>
+      <tr ng-repeat="task in vm.booking.tasks">
+        <td>{{task.completed? 'Yes': 'In-Progress'}}</td>
         <td>{{task.name}}</td>
-        <td>{{task.comments}}</td>
-        <td>{{task.date | date:"MMM d, y h:mm:ss a"}}</td>
+        <td>{{task.assignee}}</td>
+        <td>{{task.startTime | date:"MMM d, y h:mm:ss a"}}</td>
+        <td>{{task.endTime | date:"MMM d, y h:mm:ss a"}}</td>
+        <td>{{task.duration? task.duration/(1000*60) + 'minutes': ''}}</td>
         <td>
-          <button ui-sref="booking.consultProcess({bookingId:booking.id})" class="btn-lg btn btn-primary btn-block"><span
+          <button ng-click="vm.claimTask(task)" ng-disabled="task.assignee || task.completed" class="btn-lg btn btn-primary btn-block"><span
             class="glyphicon glyphicon-user"></span> Claim
           </button>
         </td>
         <td>
-          <button ui-sref="booking.consultProcess({bookingId:booking.id})" class="btn-lg btn btn-primary btn-block"><span
+          <button ng-disabled="!task.assignee || task.completed" ng-click="vm.completeTask(task)" class="btn-lg btn btn-primary btn-block"><span
             class="glyphicon glyphicon-ok"></span> Complete
           </button>
         </td>
       </tr>
       </tbody>
     </table>
-  </form>
 </div>

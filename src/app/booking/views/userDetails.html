@@ -1,18 +1,26 @@
 <section role="form">
   <div class="form-group">
     <label class="control-label">First Name:</label>
-    <input width="100px" type="text" class="form-control" name="firstName" id="firstName" placeholder="First Name...">
+    <span id="firstName" ng-disabled="true" class="form-control">{{vm.booking.patientUser.firstName}}</span>
   </div>
   <div class="form-group">
-    <label for="firstName">Last Name:</label>
-    <input type="text" class="form-control" name="lastName" id="lastName" placeholder="First Name...">
+    <label for="lastName">Last Name:</label>
+    <span id="lastName" ng-disabled="true" class="form-control">{{vm.booking.patientUser.lastName}}</span>
   </div>
   <div class="form-group">
-    <label for="firstName">Email:</label>
-    <input type="text" class="form-control" name="email" id="email" placeholder="First Name...">
+    <label for="email">Email:</label>
+    <span id="email" ng-disabled="true" class="form-control">{{vm.booking.patientUser.email}}</span>
   </div>
   <div class="form-group">
-    <label for="firstName">Cell Phone:</label>
-    <input type="text" class="form-control" name="cellPhone" id="cellPhone" placeholder="First Name...">
+    <label for="reason">Reason:</label>
+    <span id="reason" ng-disabled="true" class="form-control">{{vm.booking.reason}}</span>
+  </div>
+  <div class="form-group">
+    <label for="bookingDate">Booking Date:</label>
+    <span id="bookingDate" ng-disabled="true" class="form-control">{{vm.booking.requiredDate | date:'medium'}}</span>
+  </div>
+  <div class="form-group">
+    <label for="completed">Completed:</label>
+    <span id="completed" ng-disabled="true" class="form-control">{{vm.booking.completed? 'Yes': 'In-Progress'}}</span>
   </div>
 </section>
