@@ -24,7 +24,7 @@
         <th></th>
       </tr>
       </thead>
-      <tbody>
+      <tbody ng-if="vm.bookings && vm.bookings.length>0">
       <tr ng-repeat="booking in vm.bookings | filter:searchText">
         <td>{{booking.patientUserId}}</td>
         <td>{{booking.requiredDate | date:'medium'}}</td>

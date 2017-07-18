@@ -3,12 +3,12 @@
  */
 (function () {
   angular.module('hospitalUi.auth').factory('AuthService', AuthService);
-  function AuthService($http, $q, mainConfig, $cookieStore) {
+  function AuthService($http, $q, authConfig, $cookieStore) {
     return {getCurrentUser: getCurrentUser, login: login, isAuthorised: isAuthorised, logOut: logOut, register:register};
     function login(credential) {
       return $http({
         method: 'post',
-        url: mainConfig.baseUrl + 'auth/login',
+        url: authConfig.baseUrl + 'auth/login',
         data: credential,
         headers: {'Content-Type': 'application/json'}
       })
@@ -24,7 +24,7 @@
     function register(credential) {
       return $http({
         method: 'post',
-        url: mainConfig.baseUrl + 'auth/register',
+        url: authConfig.baseUrl + 'auth/register',
         data: credential,
         headers: {'Content-Type': 'application/json'}
       })

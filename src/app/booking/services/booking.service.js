@@ -17,7 +17,7 @@
         });
     }
     function listAll() {
-      return $http.get(mainConfig.baseUrl + 'list')
+      return $http.get(mainConfig.baseUrl + 'booking/list')
         .then(function (bookingsResponse) {
           return $q.resolve(bookingsResponse.data);
         })

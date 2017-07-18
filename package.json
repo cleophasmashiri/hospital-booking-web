@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "postinstall": "bower install"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
@@ -47,7 +48,8 @@
     "browser-sync-spa": "~1.0.3",
     "http-proxy-middleware": "~0.9.0",
     "chalk": "~1.1.1",
-    "uglify-save-license": "~0.4.1"
+    "uglify-save-license": "~0.4.1",
+    "bower": "1.6.5"
   },
   "engines": {
     "node": ">=0.10.0"
