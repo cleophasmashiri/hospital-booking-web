@@ -14,7 +14,7 @@
 > * Demo Api: https://hospital-booking-api.herokuapp.com.
 > * Api Code: https://github.com/cleophasmashiri/hospital-booking-api.
  
-![alt text](/docs/hospitalBookingProcess.jpg)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/hospitalBookingProcess.jpg)
 >Hospital Booking Process flow, figure 1.
 
 ## Features
@@ -31,34 +31,34 @@
 ## Patient Screens
 
 ### Patient Registration, figure 2.
-![alt text](/docs/screen_dumps/patient_register.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/patient_register.png)
 
 ### Patient Login, figure 3.
-![alt text](/docs/screen_dumps/patient_login.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/patient_login.png)
 
 ### Patient new booking, figure 4.
-![alt text](/docs/screen_dumps/patient_new_booking.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/patient_new_booking.png)
 
 
 ## Nurse, Doctor and Pharmacists Screens
 
 ### Nurse Registration, figure 5.
-![alt text](/docs/screen_dumps/nurse_register.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/nurse_register.png)
 
 ### Nurse Login, figure 6.
-![alt text](/docs/screen_dumps/nurse_login.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/nurse_login.png)
 
 ### Nurse booking list, figure 7.
-![alt text](/docs/screen_dumps/nurse_bookings.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/nurse_bookings.png)
 
 ### Claim Booking, figure 8.
-![alt text](/docs/screen_dumps/process_booking_nurse_claim.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/process_booking_nurse_claim.png)
 
 ### Process Booking Consultation, figure 8.
-![alt text](/docs/screen_dumps/nurse_complete_booking.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/nurse_complete_booking.png)
 
 ### Process Booking Consultation, figure 9.
-![alt text](/docs/screen_dumps/nurse_complete_booking2.png)
+![alt text](https://github.com/cleophasmashiri/hospital-booking-web/commits/master/docs/screen_dumps/nurse_complete_booking2.png)
 
 
 
