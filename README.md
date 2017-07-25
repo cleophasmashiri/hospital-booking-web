@@ -35,34 +35,34 @@
   
   
   ### Patient Registration, figure 2.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/patient_register.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/patient_register.png?raw=true)
   
   ### Patient Login, figure 3.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/patient_login.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/patient_login.png?raw=true)
   
   ### Patient new booking, figure 4.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/patient_new_booking.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/patient_new_booking.png?raw=true)
   
   
   ## Nurse, Doctor and Pharmacists Screens
   
   ### Nurse Registration, figure 5.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_register.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_register.png?raw=true)
   
   ### Nurse Login, figure 6.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_login.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_login.png?raw=true)
   
   ### Nurse booking list, figure 7.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_bookings.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_bookings.png?raw=true)
   
   ### Claim Booking, figure 8.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/process_booking_nurse_claim.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/process_booking_nurse_claim.png?raw=true)
   
   ### Process Booking Consultation, figure 8.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_complete_booking.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_complete_booking.png?raw=true)
   
   ### Process Booking Consultation, figure 9.
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_complete_booking2.png)
+  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/nurse_complete_booking2.png?raw=true)
   
   
   
