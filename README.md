@@ -2,12 +2,15 @@
 >Hospital Booking system is an application that is intended to allow people to book public visits online and alleviate the need to stand in a queue. The system will also allow public hospitals to manage hospital visits and plan resource allocation. 
 
 ### Hospital Booking System (HBS) Technology Stack
-> Hospital Booking System (HBS) is made up angularjs 1.5 front-end, 
+> Hospital Booking System (HBS) is made up angularjs 1.5 front-end and Springboot api.
+
+> Front-end 
+> * Technologyframework: Angularjs 1.5. 
 > * Demo UI: https://hospital-booking.herokuapp.com
 > * UI Code: https://github.com/cleophasmashiri/hospital-booking-web
 
-> Hospital Booking api,
-> * Java, Springboot, Activiti Bpm workflow.
+> Hospital Booking api.
+> * Technologyframework: Java, Springboot, Activiti Bpm workflow.
 > * Demo Api: https://hospital-booking-api.herokuapp.com.
 > * Api Code: https://github.com/cleophasmashiri/hospital-booking-api.
  
