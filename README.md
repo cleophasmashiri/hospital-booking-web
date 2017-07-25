@@ -17,7 +17,7 @@
   > * Demo Api: https://hospital-booking-api.herokuapp.com.
   > * Api Code: https://github.com/cleophasmashiri/hospital-booking-api.
    
-  ![alt text](https://dl.dropboxusercontent.com/spa/nw0u01g1xsgnn5v/hospital-booking/hospitalBookingProcess.jpg)
+  ![alt text](/docs/hospital-booking/hospitalBookingProcess.jpg)
   >Hospital Booking Process flow, figure 1.
   
   ## Features
