@@ -2,7 +2,6 @@
 >Hospital Booking system is an application that is intended to allow people to book public visits online and alleviate the need to stand in a queue. The system will also allow public hospitals to manage hospital visits and plan resource allocation.
 
 ![alt text](https://github.com/cleophasmashiri/hospital-booking-web/blob/master/docs/hospitalBookingProcess.jpg)
-![alt text](/docs/hospitalBookingProcess.jpg)
 >Hospital Booking Process flow, figure 1.
 
 ## Features
