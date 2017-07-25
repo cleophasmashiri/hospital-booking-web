@@ -27,7 +27,7 @@
 ![alt text](/docs/screen_dumps/patient_new_booking.png)
 
 
-## Nurse Screens
+## Nurse, Doctor and Pharmacists Screens
 
 ### Nurse Registration, figure 5.
 ![alt text](/docs/screen_dumps/nurse_register.png)
@@ -37,6 +37,16 @@
 
 ### Nurse booking list, figure 7.
 ![alt text](/docs/screen_dumps/nurse_bookings.png)
+
+### Claim Booking, figure 8.
+![alt text](/docs/screen_dumps/process_booking_nurse_claim.png)
+
+### Process Booking Consultation, figure 8.
+![alt text](/docs/screen_dumps/nurse_complete_booking.png)
+
+### Process Booking Consultation, figure 9.
+![alt text](/docs/screen_dumps/nurse_complete_booking2.png)
+
 
 
 
